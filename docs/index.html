@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>陳間時光 – Indie Games</title>
+<meta name="description" content="Indie PC games made with Godot by 陳間時光.">
+<meta property="og:title" content="陳間時光 – Indie Games">
+<meta property="og:description" content="Indie PC games made with Godot.">
+<meta property="og:image" content="https://morningfungame.com/assets/cover.jpg"> <!-- TODO: 1200x630 -->
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <nav><a href="./">Games</a><a href="https://blog.morningfungame.com">Blog</a><a href="YOUTUBE_URL">YouTube</a></nav> <!-- TODO: YOUTUBE_URL -->
+  <button id="lang" type="button">繁體中文</button>
+</header>
+
+<div class="hero">
+  <h1>陳間時光</h1>
+  <p data-en>Indie PC games made with Godot.</p>
+  <p data-zh>使用 Godot 製作的獨立 PC 遊戲。</p>
+</div>
+
+<section>
+  <h2 data-en>Games</h2><h2 data-zh>遊戲作品</h2>
+  <div class="grid">
+    <!-- Copy this card for every new game. Add its page under games/<slug>/ -->
+    <a class="card game" href="games/game-template/">
+      <img src="assets/cover.jpg" alt="GAME_NAME cover"> <!-- TODO -->
+      <div>
+        <h3>GAME_NAME</h3>
+        <p data-en>Tetris meets Breakout. Stack it, then smash it.</p>
+        <p data-zh>俄羅斯方塊結合打磚塊。堆起來，再打碎它。</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>© 陳間時光 · <a href="https://blog.morningfungame.com">Unity / Godot dev blog</a></footer>
+</div>
+<script src="assets/lang.js"></script>
+</body>
+</html>
