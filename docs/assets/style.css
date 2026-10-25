@@ -23,6 +23,6 @@ h2{margin-top:0}
 .shots{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .shots img{width:100%;border-radius:8px;background:var(--card);aspect-ratio:16/9;object-fit:cover}
 footer{color:var(--mute);text-align:center;padding:32px 0;font-size:.9rem}
-[data-zh]{display:none}
-html[lang="zh-TW"] [data-en]{display:none}
-html[lang="zh-TW"] [data-zh]{display:revert}
+header select{background:var(--card);border:1px solid var(--mute);color:var(--fg);border-radius:6px;padding:4px 8px}
+[data-l]{display:none}
+html[lang="zh-TW"] [data-l="zh-TW"],html[lang="zh-CN"] [data-l="zh-CN"],html[lang="en"] [data-l="en"],html[lang="ru"] [data-l="ru"],html[lang="ja"] [data-l="ja"],html[lang="es"] [data-l="es"]{display:revert}

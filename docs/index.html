@@ -5,43 +5,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://i.ytimg.com; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>陳間時光 – Indie Games</title>
-<meta name="description" content="Indie PC games made with Godot by 陳間時光.">
-<meta property="og:title" content="陳間時光 – Indie Games">
+<title>MorningFunGame – Indie Games</title>
+<meta name="description" content="Indie PC games made with Godot by MorningFunGame (陳間時光).">
+<meta property="og:title" content="MorningFunGame – Indie Games">
 <meta property="og:description" content="Indie PC games made with Godot.">
-<meta property="og:image" content="https://www.morningfungame.com/assets/cover.jpg"> <!-- TODO: 1200x630 -->
 <link rel="stylesheet" href="assets/style.css">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 <div class="wrap">
 <header>
-  <nav><a href="./">Games</a><a href="devlog/">Devlog</a><a href="https://blog.morningfungame.com">Blog</a><a href="https://www.youtube.com/channel/UCXWxqnjzo4q6NhQiLhQFk7g">YouTube</a></nav>
-  <button id="lang" type="button">繁體中文</button>
+  <nav><a href="./">Games</a><a href="devlog/">Devlog</a><a href="https://blog.morningfungame.com/">Blog</a><a href="https://www.youtube.com/channel/UCXWxqnjzo4q6NhQiLhQFk7g">YouTube</a></nav>
+  <select id="lang" aria-label="Language">
+    <option value="zh-TW">繁體中文</option><option value="zh-CN">简体中文</option><option value="en">English</option><option value="ru">Русский</option><option value="ja">日本語</option><option value="es">Español</option>
+  </select>
 </header>
 
 <div class="hero">
-  <h1>陳間時光</h1>
-  <p data-en>Indie PC games made with Godot.</p>
-  <p data-zh>使用 Godot 製作的獨立 PC 遊戲。</p>
+  <h1 data-l="zh-TW">陳間時光</h1><h1 data-l="zh-CN">陈间时光</h1><h1 data-l="en">MorningFunGame</h1><h1 data-l="ru">MorningFunGame</h1><h1 data-l="ja">MorningFunGame</h1><h1 data-l="es">MorningFunGame</h1>
+  <p data-l="zh-TW">使用 Godot 製作的獨立 PC 遊戲。</p><p data-l="zh-CN">使用 Godot 制作的独立 PC 游戏。</p><p data-l="en">Indie PC games made with Godot.</p><p data-l="ru">Инди-игры для ПК, созданные на Godot.</p><p data-l="ja">Godot で作るインディー PC ゲーム。</p><p data-l="es">Juegos indie para PC hechos con Godot.</p>
+  <a class="btn" href="https://blog.morningfungame.com/" data-l="zh-TW">看部落格</a><a class="btn" href="https://blog.morningfungame.com/" data-l="zh-CN">看博客</a><a class="btn" href="https://blog.morningfungame.com/" data-l="en">Read the blog</a><a class="btn" href="https://blog.morningfungame.com/" data-l="ru">Читать блог</a><a class="btn" href="https://blog.morningfungame.com/" data-l="ja">ブログを読む</a><a class="btn" href="https://blog.morningfungame.com/" data-l="es">Leer el blog</a>
+  <a class="btn alt" href="https://www.youtube.com/channel/UCXWxqnjzo4q6NhQiLhQFk7g">YouTube</a>
 </div>
 
 <section>
-  <h2 data-en>Games</h2><h2 data-zh>遊戲作品</h2>
+  <h2 data-l="zh-TW">遊戲作品</h2><h2 data-l="zh-CN">游戏作品</h2><h2 data-l="en">Games</h2><h2 data-l="ru">Игры</h2><h2 data-l="ja">ゲーム</h2><h2 data-l="es">Juegos</h2>
   <div class="grid">
-    <!-- Copy this card for every new game. Add its page under games/<slug>/ -->
-    <a class="card game" href="games/game-template/">
-      <img src="assets/cover.jpg" alt="GAME_NAME cover"> <!-- TODO -->
-      <div>
-        <h3>GAME_NAME</h3>
-        <p data-en>Falling-block puzzle meets brick breaker. Stack it, then smash it.</p>
-        <p data-zh>落下方塊結合打磚塊。堆起來，再打碎它。</p>
-      </div>
-    </a>
+    <!-- When a game is announced, replace this card with a link to games/<slug>/ -->
+    <div class="card">
+      <h3 data-l="zh-TW">新遊戲開發中</h3><h3 data-l="zh-CN">新游戏开发中</h3><h3 data-l="en">New game in development</h3><h3 data-l="ru">Новая игра в разработке</h3><h3 data-l="ja">新作ゲーム開発中</h3><h3 data-l="es">Nuevo juego en desarrollo</h3>
+      <p data-l="zh-TW">Project BPM（暫定名稱）</p><p data-l="zh-CN">Project BPM（暂定名称）</p><p data-l="en">Project BPM (working title)</p><p data-l="ru">Project BPM (рабочее название)</p><p data-l="ja">Project BPM（仮題）</p><p data-l="es">Project BPM (título provisional)</p>
+      <p data-l="zh-TW">開發進度會在部落格和 YouTube 更新。</p><p data-l="zh-CN">开发进度会在博客和 YouTube 更新。</p><p data-l="en">Follow development on the blog and YouTube.</p><p data-l="ru">Следите за разработкой в блоге и на YouTube.</p><p data-l="ja">開発の進捗はブログと YouTube で公開しています。</p><p data-l="es">Sigue el desarrollo en el blog y en YouTube.</p>
+    </div>
   </div>
 </section>
 
-<footer>© 陳間時光 · <a href="https://blog.morningfungame.com">Unity / Godot dev blog</a></footer>
+<footer>© MorningFunGame · 陳間時光</footer>
 </div>
 <script src="assets/lang.js"></script>
 </body>
