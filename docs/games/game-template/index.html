@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://i.ytimg.com; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <!-- Copy this folder to games/<slug>/ for each new game. TODO: replace GAME_NAME, URLs and image paths marked TODO -->
 <title>GAME_NAME – Falling-Block Puzzle meets Brick Breaker | PC Puzzle Action</title>
 <meta name="description" content="GAME_NAME is a PC puzzle-action game that fuses falling-block puzzles and brick breaking. Stack the blocks, then smash them. Wishlist on Steam.">
@@ -10,8 +12,10 @@
 <meta property="og:title" content="GAME_NAME – Falling-Block Puzzle meets Brick Breaker">
 <meta property="og:description" content="Stack the blocks, then smash them. Wishlist on Steam.">
 <meta property="og:image" content="https://www.morningfungame.com/assets/cover.jpg"> <!-- TODO: 1200x630 image -->
+<meta name="robots" content="noindex"> <!-- remove in real game pages -->
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../../assets/style.css">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 <div class="wrap">
@@ -27,11 +31,11 @@
   <p data-zh>結合落下方塊與打磚塊的 PC 益智動作遊戲：你堆下的方塊，就是等一下要打的磚。</p>
   <a class="btn" href="STEAM_URL" data-en>Wishlist on Steam</a> <!-- TODO -->
   <a class="btn" href="STEAM_URL" data-zh>加入 Steam 願望清單</a>
-  <a class="btn alt" href="YOUTUBE_URL">YouTube</a> <!-- TODO: 陳間時光的遊戲 channel -->
+  <a class="btn alt" href="https://www.youtube.com/channel/UCXWxqnjzo4q6NhQiLhQFk7g">YouTube</a>
 </div>
 
 <div class="video">
-  <!-- TODO: swap for <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe> -->
+  <!-- TODO: swap for <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" allowfullscreen></iframe> -->
   <img src="../../assets/trailer-placeholder.jpg" alt="Gameplay trailer placeholder">
 </div>
 

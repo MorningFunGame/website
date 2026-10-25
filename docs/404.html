@@ -3,19 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://i.ytimg.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>陳間時光</title>
 <meta name="robots" content="noindex">
 <link rel="stylesheet" href="/assets/style.css">
-<script>
-// Old Blogger URLs (www.morningfungame.com/2020/07/unity.html, /search/..., /feeds/...)
-// now live on blog.morningfungame.com with the same path.
-(function(){
-  var p=location.pathname;
-  if(/^\/(\d{4}\/\d{2}\/|p\/|search|feeds\/|\d{4}\/?$)/.test(p)){
-    location.replace('https://blog.morningfungame.com'+p+location.search+location.hash);
-  }
-})();
-</script>
+<script src="/assets/redirect.js"></script>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 <div class="wrap hero">
